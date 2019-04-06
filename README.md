@@ -10,20 +10,29 @@ Ici, nous voulons écrire nos propres événements et les proposer à d'autre d�
 Le travail est le suivant:
 Crée 3 Form (Main,Livre et Historique des Prix)
 
-(http://image.noelshack.com/fichiers/2019/14/6/1554571360-capture20.png)
+![Main.png](http://image.noelshack.com/fichiers/2019/14/6/1554571360-capture20.png)
 
-(http://image.noelshack.com/fichiers/2019/14/6/1554571367-capture21.png)
+Cette fenêtre permet: 
+* D'instancier un livre.
+* D'instancier la fenêtre Livre et l'Afficher.
+* D'instancier la fenêtre Historique et l'Afficher.
 
-(http://image.noelshack.com/fichiers/2019/14/6/1554571372-capture22.png)
-Dans un premier temps il fut nécessaire de créer la classe Mammifère dont les autres classes vont hériter.
-Intéressons-nous au consctucteur de Mammifère:
-public Mammifere(string nom, string lieuHabitation, string nomCrie, bool jeSuisDomestique)
-{
-  this.nom = nom;
-  this.lieuHabitation = lieuHabitation;
-  this.nomCrie = nomCrie;
-  this.jeSuisDomestique = jeSuisDomestique;
-}
+![Livre.png](http://image.noelshack.com/fichiers/2019/14/6/1554571367-capture21.png)
+
+Cette fenêtre permet: 
+* Le constructeur permet de s'abonner aux variations de prix du livre.
+* Toute action dans l'interface graphique se répercute sur l'objet livre.
+
+![Historique.png](http://image.noelshack.com/fichiers/2019/14/6/1554571372-capture22.png)
+
+Cette fenêtre permet:
+* Le constructeur permet de s'abonner aux variations de prix du livre.
+* Lorsque la fenêtre détecte par événement une variation du prix, elle ajoute le nouveau prix dans la ListBox.
+
+
+![Diagramme.png](http://image.noelshack.com/fichiers/2019/14/6/1554575331-capture50.png)
+
+![Resumer.png](http://image.noelshack.com/fichiers/2019/14/6/1554575340-capture51.png)
 
 En effet celui-ci va nous permettre de compléter le constructeur des classes Félin et Cétacé.
 Afin de déclarer un héritage il est nécessaire de déclarer la ligne suivante:
